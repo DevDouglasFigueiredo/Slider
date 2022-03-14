@@ -7,3 +7,77 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.slider{
+    margin: 0;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 400px;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid rgb(126, 2, 2);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    margin-right: .5rem;
+}
+
+.manual-btn:hover{
+        background-color: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+   
+    margin-left: -25%;
+}
+
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+ #radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+ #radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -125%; 
+}
+ 
